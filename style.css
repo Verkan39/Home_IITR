@@ -204,6 +204,7 @@ i{
     position: absolute;
     top:45%;
     left:10%;
+    z-index: 1;
     color:#FFFFFF;
     display: flex;
     flex-direction: column;
@@ -236,8 +237,8 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position:absolute;
-    top:105%;
+    /* position:absolute;
+    top:105%; */
 }
 #extra div{
     display: grid;
@@ -280,6 +281,7 @@ i{
     align-self: flex-end;
 }
 #vid{
+    z-index: 1;
     position: relative;
     width:100%;
     height:645px;
@@ -291,7 +293,77 @@ i{
     object-fit: cover;
 }
 #extra_ka_extra{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
+.titles{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato-Bold';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.vall{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    align-self: center;
+}
+#gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: auto;
+    height: auto;
+}
+#gallery img{
+    width: 100%;
+    height: 100%;
+}
+#col1{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#col2{
+    width:49%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 10px;
+}
+#col2_ka_row1{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap:12px;
+}
+#col2_ka_row2{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap:12px;
+}
+#col3{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 4px;
 }
