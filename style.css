@@ -53,7 +53,7 @@ header{
     font-family: 'Lato';
     justify-content: space-between;
     font-weight: 400;
-    font-size: 15.45px;
+    font-size: clamp(9px,1.1vw,15.45px);
     line-height: 100%;
     letter-spacing: 2%;
 }
@@ -220,6 +220,7 @@ i{
     text-shadow: 0px 4px 4px #0000004D;
 }
 #hype{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -366,4 +367,149 @@ i{
     flex-direction: column;
     justify-content: space-between;
     row-gap: 4px;
+}
+#first_of_top img{
+    display: none;
+}
+#options, #search_phone{
+    display: none;
+}
+#lakshya, #photu, #gallery_phone{
+    display: none;
+}
+@media (max-width: 768px)  {
+    #first_of_top div:not(#sahar){
+        display: none;
+    }
+    #sahar{
+        font-size: 15.45px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    #first_of_top img{
+        display: block;
+    }
+    #search-icon{
+        display: none;
+    }
+    #first_of_top.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #first_of_top.active #sahar img{
+        transform: rotate(180deg);
+    }
+    #options, #search_phone{
+        display: block;
+    }
+    #head1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        border-bottom:2.29px solid #F8B300;
+    }
+    #h1p{
+        font-size: 24px;
+    }
+    #h2p{
+        font-size: 20px;
+    }
+    #head img{
+        width: 50px;
+    }
+    nav div:not(#lakshya){
+        display: none;
+    }
+    nav{
+        border-top: none;
+    }
+    #topbar{
+        border: none;
+    }
+    #lakshya{
+        font-family: 'Hind';
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 8%;
+    }
+    #vid{
+        display: none;
+    }
+    #photu{
+        display: block;
+        width: 100%;
+        margin-top:-135px;
+    }
+    #char_shabd{
+        left:7%;
+        font-family: 'Lato-Bold';
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 70px;
+        letter-spacing: 2%;
+        text-transform: uppercase;
+    }
+    #hype{
+        right:3.5%;
+        top:46%;
+    }
+    #hype a img{
+        width:48px;
+    }
+    #extra{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin-top: -10%;
+    }
+    #staff{
+        order:1;
+    }
+    .blue{
+        background: #F8B300;
+    }
+    .vall{
+        font-family: 'Lato-Bold';
+    }
+    .titles{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #gallery{
+        display: none;
+    }
+    #gallery_phone{
+        margin-top: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        column-gap: 10px;
+    }
+    #pc1{
+        width: 45%;
+    }
+    #pc2{
+        width: 45%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    #pic4 img{
+        height: 405px;
+    }
+    #pic2 img{
+        height: 455px;
+    }
 }
