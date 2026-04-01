@@ -19,6 +19,10 @@
     font-family: 'Lato';
     src: url(font/Lato-Light.ttf);
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
 header{
     display:flex;
     flex-direction: column;
@@ -467,23 +471,23 @@ i{
     margin-top: 60px;
     color:#232323;
 }
-.p-card{
+.card{
     display: grid;
     grid-template-columns: auto 1fr;
     padding-left: 30px;
     padding-right: 10px;
 }
-.pic-patent img{
+.card-pic img{
     width: 600.1640014648438px;
     height: auto;
     opacity: 1;
     border-radius: 8px;
     border-bottom: 2px solid #FEBE10DE;
 }
-.title-patent, .desc-patent{
+.card-title, .card-desc{
     padding: 20px;
 }
-.title-patent{
+.card-title{
     padding-top: 0px;
     font-family: 'Lato';
     font-weight: 600;
@@ -491,7 +495,7 @@ i{
     line-height: 36px;
     letter-spacing: 0%;
 }
-.desc-patent{
+.card-desc{
     font-family:'Segoe UI';
     font-weight: 400;
     font-size: 15px;
@@ -533,6 +537,220 @@ i{
 .content{
     display:flex;
     flex-direction:column;
+}
+.arrow{
+    border: none;
+}
+#achievements{
+    padding: 60px;
+    background: #99BBD1;
+    color:#232323;
+}
+.a-card-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+.a-card{
+    width:auto;
+    background: #232323;
+    box-shadow: 0px 0px 6px 0px #00000026;
+    border-radius: 8px;
+    color:#FFFFFFCC;
+
+}
+.a-card-caption{
+    padding: 15px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: justify;
+}
+.a-card-body{
+    padding:15px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: justify;
+}
+.a-img{
+    height: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.a-card img{
+    width:100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+}
+#events{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+#cont1{
+    background:#232323;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width:84%;
+    height: 60%;
+    border-radius: 16px;
+}
+#names{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 1.25%;
+    vertical-align: middle;
+    color: #FFFFFFCC;
+}
+#names div{
+    margin: 4%;
+    padding: 3%;
+    padding-left: 0;
+    margin-left: 0;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+#names div:hover{
+    padding:3%;
+    background:#F9B202;
+    color:#232323CC;
+    border-radius: 8px;
+}
+#rem_events{
+    display:grid;
+    grid-template-columns: 25% 1fr;
+}
+#events_gallery{
+    font-family: 'Lato-Bold';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    padding-top: 25px ;
+    padding-bottom: 25px;
+}
+#event_pictures{
+    width: 100%;
+}
+#event_pictures img{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: 8px;
+}
+#milestones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.years{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 8%;
+    padding-right: 8%;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.years div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#23232399;
+    font-family: 'Roboto';
+}
+.year{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-bottom: 50%;
+}
+.m-card{
+    grid-template-columns: auto 1fr;
+}
+.m-title{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+.m-title span{
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    display: inline;
+} 
+.m-desc{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #00000099;
+}
+.m-button{
+    font-family: 'Lato';
+font-weight: 800;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 1%;
+vertical-align: middle;
+text-transform: uppercase;
+color: #232323;
+}
+.m-read{
+    border: 1px solid #232323;
+    border-radius: 2px;
+}
+#mile1{
+    width:500px;
+    bottom: none;
+}
+#mile1 img{
+    width:100%;
+    border: none;
+}
+#milest{
+    color:#4C4C4C;
+    font-family: 'Lato-Bold';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+#mileva{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    color: #232323DE;
 }
 @media (max-width: 768px)  {
     #first_of_top div:not(#sahar){
