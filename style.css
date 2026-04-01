@@ -3,6 +3,9 @@
     padding:0;
     margin:0;
 }
+body {
+    overflow-x: hidden;
+}
 @font-face {
     font-family: 'Lato-Bold';
     src: url(font/Lato-Bold.ttf);
@@ -491,6 +494,7 @@ i{
     opacity: 1;
     border-radius: 8px;
     border-bottom: 2px solid #FEBE10DE;
+    object-fit: cover;
 }
 .card-title, .card-desc{
     padding: 20px;
@@ -1032,6 +1036,21 @@ footer{
     letter-spacing: 0%;
     text-align: center;
 }
+#events_gallery_title{
+    display: none;
+}
+#cogni_ka_sar{
+    display: none;
+}
+#devtoolsphone, #imgiitrphone{
+    display: none;
+}
+#phonemile{
+    display: none;
+}
+#years_phone{
+    display: none;
+}
 @media (max-width: 768px)  {
     #first_of_top div:not(#sahar){
         display: none;
@@ -1133,10 +1152,12 @@ footer{
     }
     .vall{
         font-family: 'Lato-Bold';
+        font-size: 18px;
     }
     .titles{
-        margin-left: 5%;
-        margin-right: 5%;
+        /* margin-left: 5%;
+        margin-right: 5%; */
+        font-size: 27px;
     }
     #gallery{
         display: none;
@@ -1145,37 +1166,38 @@ footer{
         margin-top: 40px;
         margin-left: 5%;
         margin-right: 5%;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         column-gap: 10px;
-    }
-    #pc1{
-        width: 45%;
-    }
-    #pc2{
-        width: 45%;
     }
     #gallery_phone img{
         width: 100%;
         height: auto;
         margin-bottom: 5px;
     }
-    #pic4 img{
-        height: 405px;
+    #pc1, #pc2{
+        display: grid;
+        row-gap: 10px;
     }
-    #pic2 img{
-        height: 455px;
+    #pc2 div{
+        overflow: hidden;
+    }
+    #pc2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
     .card{
         grid-template-rows: auto 1fr;
     }
     #caption{
         order:-1;
+        padding-bottom: 0%;
     }
     #nums{
         display: flex;
         flex-direction: column;
+        padding-top: 6%;
     }
     #archi, #eng, #asia{
         border:none;
@@ -1185,7 +1207,7 @@ footer{
         display: none;
     } */
     .a-card{
-        flex: 0 0 95%;
+        flex: 0 0 97%;
     }
     .a-card-set{
         overflow-x: auto;
@@ -1195,5 +1217,213 @@ footer{
     }
     #achievements{
         background: #F8B300;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top:5%;
+    }
+    #events{
+        padding:0;
+    }
+    #cont1{
+        width: 100vw;
+        margin-left: 0;
+        margin-right:0;
+        border-radius: 0;
+        padding: 0;
+    }
+    #rem_events{
+        display: flex;
+        flex-direction: column;
+    }
+    #names{
+        flex-direction: row;
+        overflow-x: auto;
+        order:1;
+    }
+    #names::-webkit-scrollbar{
+        display: none;
+    }
+    #names div{
+        flex: 0 0 auto;
+    }
+    #event_pictures{
+        width:90%;
+        margin-left:5%;
+    }
+    #events_gallery{
+        display: none;
+    }
+    #events_gallery_title{
+        display: flex;
+        padding-top: 5%;
+    }
+    #cogni_ka_sar{
+        display:block;
+        order:2;
+        font-family: 'Segoe UI';
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5.5%;
+        text-align: justify;
+        color:#FFFFFFCC;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+    #noticeandevents{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .notices{
+        background: #FACB5559;
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+    .notice-card{
+        border: none;
+    }
+    #event2{
+        border:none;
+    }
+    #credits{
+        flex-direction: column;
+    }
+    #devtools, #imgiitr{
+        display: none;
+    }
+    #devtoolsphone{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-around;
+        background: #121212;
+        font-family: 'Segoe UI';
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 30.8px;
+        letter-spacing: 0%;
+        color:#F7F7F7;
+        border: none;
+    }
+    #imgiitrphone{
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        background: #1A1A1A;
+        font-family: 'Segoe UI';
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: 30.8px;
+        letter-spacing: 0%;
+        color:#F7F7F7;
+        border: none;
+    }
+    #recent_ka_title{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 4%;
+    }
+    #achi_ka_title{
+        margin-left:0%;
+        margin-right: 0%;
+    }
+    #copyright{
+        background: #292929;
+        border: none;
+    }
+    footer{
+        padding-left: 10%;
+    }
+    #main_footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heading_columns{
+        padding-bottom: 2%;
+    }
+    .date-box{
+        border: 0.05px solid #000000;
+    }
+    .card{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .card-title{
+        padding-bottom: 10px;
+    }
+    .buttons{
+        margin-top: 0;
+        padding-top: 3%;
+    }
+    #webmile{
+        display: none;
+    }
+    #phonemile{
+        padding-top: 4%;
+        display: inline;
+        font-family: 'Segoe UI';
+        font-weight: 600;
+        font-style: Semibold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+    #milestitle{
+        padding-top: 4%;
+    }
+    .content-of-scoller{
+        margin: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .card-pic{
+        width:100%;
+        overflow: hidden;
+    }
+    .card-pic img{
+        width:100%;
+        object-fit: cover;
+    }
+    .years{
+        display: none;
+    }
+    #years_phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 8%;
+        padding-right: 8%;
+        color: #232323CC;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 2px;
+        line-height: 100%;
+        letter-spacing: 1.25%;
+    }
+    #years_phone div:hover{
+        background: #232323;
+        color:#FFFFFF;
+    }
+    .year{
+        border-radius: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+        margin-bottom: 5%;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 100%;
+        letter-spacing: 1.25%;
+    }
+    .m-card{
+        justify-self: center;
     }
 }
