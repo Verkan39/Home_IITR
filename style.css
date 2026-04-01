@@ -23,6 +23,10 @@
     font-family: 'Roboto';
     src: url(font/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(font/Inter_18pt-Regular.ttf);
+}
 header{
     display:flex;
     flex-direction: column;
@@ -751,6 +755,129 @@ color: #232323;
     letter-spacing: 2%;
     vertical-align: middle;
     color: #232323DE;
+}
+footer{
+    background:#000000;
+    color:#FFFFFF
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+}
+.aisehi img{
+    position: relative;
+    top:20%;
+}
+.aisehi2 img{
+    position: relative;
+    top: 10%;
+}
+#contacts div{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 30.8px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#main_footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+#column1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+#logo_strip{
+    display: flex;
+    flex-direction: row;
+}
+#logo_strip a{
+    padding-right: 18px;
+}
+.heading_columns{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.heading_columns{
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.list{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.list div{
+    padding-bottom: 5%;
+}
+.list img{
+    position: relative;
+    vertical-align: center;
+}
+#credits{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+}
+#devtools{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 30.8px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+#imgiitr{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+#copyright{
+    background: #121212;
+    color:#FFFFFF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 25.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
 }
 @media (max-width: 768px)  {
     #first_of_top div:not(#sahar){
