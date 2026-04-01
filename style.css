@@ -326,6 +326,8 @@ i{
     margin-bottom: 4%;
 }
 .vall{
+    width: auto;
+    justify-self: flex-end;
     font-family: 'Lato';
     font-weight: 500;
     font-size: 26px;
@@ -387,6 +389,8 @@ i{
     display: none;
 }
 #ranks{
+    display: flex;
+    flex-direction: column;
     background: #F9F9F9;
     margin-top: 25px;
 }
@@ -879,6 +883,155 @@ footer{
     text-align: center;
     vertical-align: middle;
 }
+#noticeandevents{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+.notice_heading, .event_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.noticeboard{
+    font-family: 'Lato-Bold';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #232323;
+}
+.notice-vall{
+    font-family: 'Lato-Bold';
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    color: #232323;
+}
+.notices{
+    background: #99BBD159;
+    border-radius:8px;
+}
+.notice-card{
+    margin-left:5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-bottom: 1px solid #99BBD1;
+    row-gap: 10px;
+}
+.category{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1.5%;
+}
+#n4{
+    border: none;
+}
+.date{
+    justify-self: end;
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1.5%;
+}
+.short-notice{
+    grid-column: span 2;
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.events_heading{
+    font-family: 'Lato-Bold';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #232323DE;
+}
+.events-vall{
+    font-family: 'Lato-Bold';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    color:#4C4C4C;
+}
+.event-list{
+    display: grid;
+    row-gap: 10px;
+}
+.event-card{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    column-gap: 10px;
+    margin-top: 5%;
+    border-bottom:1px solid #F9B202;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    /* padding-top: 2%; */
+}
+.head-event{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000DE;
+    align-self: center;
+}
+.event-desc{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#00000099;
+    align-self: center;
+}
+.detail-box{
+    display: grid;
+}
+.date-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:8px;
+    height: 65px;
+    box-shadow: 0px 0px 4px 0px #86868633;
+}
+.day{
+    font-family: 'Lato-Bold';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.month{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
 @media (max-width: 768px)  {
     #first_of_top div:not(#sahar){
         display: none;
@@ -1003,7 +1156,7 @@ footer{
     #pc2{
         width: 45%;
     }
-    img{
+    #gallery_phone img{
         width: 100%;
         height: auto;
         margin-bottom: 5px;
@@ -1013,5 +1166,34 @@ footer{
     }
     #pic2 img{
         height: 455px;
+    }
+    .card{
+        grid-template-rows: auto 1fr;
+    }
+    #caption{
+        order:-1;
+    }
+    #nums{
+        display: flex;
+        flex-direction: column;
+    }
+    #archi, #eng, #asia{
+        border:none;
+        border-bottom: 0.6px solid #C4C4C4;
+    }
+    /* #a1, #a3{
+        display: none;
+    } */
+    .a-card{
+        flex: 0 0 95%;
+    }
+    .a-card-set{
+        overflow-x: auto;
+    }
+    .a-card-set::-webkit-scrollbar{
+        display: none;
+    }
+    #achievements{
+        background: #F8B300;
     }
 }
