@@ -188,7 +188,7 @@ nav div{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 1vw;
     font-family: Lato;
     font-weight: 400;
     font-size: 16.02px;
@@ -236,7 +236,7 @@ i{
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top:55%;
+    top:50%;
     right:0.5%;
 }
 #first img{
@@ -258,7 +258,7 @@ i{
     grid-template-columns: auto auto;
     justify-content:center;
     align-items:center;
-    column-gap:15px;
+    column-gap:15px;;
     min-width: 300px;
     min-height: 250px;
     opacity: 1;
@@ -485,7 +485,7 @@ i{
 .card{
     display: grid;
     grid-template-columns: auto 1fr;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 .card-pic img{
@@ -570,7 +570,7 @@ i{
     box-shadow: 0px 0px 6px 0px #00000026;
     border-radius: 8px;
     color:#FFFFFFCC;
-
+    transition: transform 0.5s ease;
 }
 .a-card-caption{
     padding: 15px;
@@ -734,6 +734,9 @@ letter-spacing: 1%;
 vertical-align: middle;
 text-transform: uppercase;
 color: #232323;
+}
+.arrow button{
+    background-color: #99BBD1;
 }
 .m-read{
     border: 1px solid #232323;
@@ -1051,379 +1054,10 @@ footer{
 #years_phone{
     display: none;
 }
-@media (max-width: 768px)  {
-    #first_of_top div:not(#sahar){
-        display: none;
-    }
-    #sahar{
-        font-size: 15.45px;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-    }
-    #first_of_top img{
-        display: block;
-    }
-    #search-icon{
-        display: none;
-    }
-    #first_of_top.active{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    #first_of_top.active #sahar img{
-        transform: rotate(180deg);
-    }
-    #options, #search_phone{
-        display: block;
-    }
-    #head1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        border-bottom:2.29px solid #F8B300;
-    }
-    #h1p{
-        font-size: 24px;
-    }
-    #h2p{
-        font-size: 20px;
-    }
-    #head img{
-        width: 50px;
-    }
-    nav div:not(#lakshya){
-        display: none;
-    }
-    nav{
-        border-top: none;
-    }
-    #topbar{
-        border: none;
-    }
-    #lakshya{
-        font-family: 'Hind';
-        display: block;
-        font-size: 14px;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 100%;
-        letter-spacing: 8%;
-    }
-    #vid{
-        display: none;
-    }
-    #photu{
-        display: block;
-        width: 100%;
-        margin-top:-135px;
-    }
-    #char_shabd{
-        left:7%;
-        font-family: 'Lato-Bold';
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 70px;
-        letter-spacing: 2%;
-        text-transform: uppercase;
-    }
-    #hype{
-        right:3.5%;
-        top:46%;
-    }
-    #hype a img{
-        width:48px;
-    }
-    #extra{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        margin-top: -10%;
-    }
-    #staff{
-        order:1;
-    }
-    .blue{
-        background: #F8B300;
-    }
-    .vall{
-        font-family: 'Lato-Bold';
-        font-size: 18px;
-    }
-    .titles{
-        /* margin-left: 5%;
-        margin-right: 5%; */
-        font-size: 27px;
-    }
-    #gallery{
-        display: none;
-    }
-    #gallery_phone{
-        margin-top: 40px;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-    }
-    #gallery_phone img{
-        width: 100%;
-        height: auto;
-        margin-bottom: 5px;
-    }
-    #pc1, #pc2{
-        display: grid;
-        row-gap: 10px;
-    }
-    #pc2 div{
-        overflow: hidden;
-    }
-    #pc2 img{
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-    }
-    .card{
-        grid-template-rows: auto 1fr;
-    }
-    #caption{
-        order:-1;
-        padding-bottom: 0%;
-    }
-    #nums{
-        display: flex;
-        flex-direction: column;
-        padding-top: 6%;
-    }
-    #archi, #eng, #asia{
-        border:none;
-        border-bottom: 0.6px solid #C4C4C4;
-    }
-    /* #a1, #a3{
-        display: none;
-    } */
-    .a-card{
-        flex: 0 0 97%;
-    }
-    .a-card-set{
-        overflow-x: auto;
-    }
-    .a-card-set::-webkit-scrollbar{
-        display: none;
-    }
-    #achievements{
-        background: #F8B300;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top:5%;
-    }
-    #events{
-        padding:0;
-    }
-    #cont1{
-        width: 100vw;
-        margin-left: 0;
-        margin-right:0;
-        border-radius: 0;
-        padding: 0;
-    }
-    #rem_events{
-        display: flex;
-        flex-direction: column;
-    }
-    #names{
-        flex-direction: row;
-        overflow-x: auto;
-        order:1;
-    }
-    #names::-webkit-scrollbar{
-        display: none;
-    }
-    #names div{
-        flex: 0 0 auto;
-    }
-    #event_pictures{
-        width:90%;
-        margin-left:5%;
-    }
-    #events_gallery{
-        display: none;
-    }
-    #events_gallery_title{
-        display: flex;
-        padding-top: 5%;
-    }
-    #cogni_ka_sar{
-        display:block;
-        order:2;
-        font-family: 'Segoe UI';
-        font-weight: 200;
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: 5.5%;
-        text-align: justify;
-        color:#FFFFFFCC;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-    }
-    #noticeandevents{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-    .notices{
-        background: #FACB5559;
-        margin-top: 7%;
-        margin-bottom: 10%;
-    }
-    .notice-card{
-        border: none;
-    }
-    #event2{
-        border:none;
-    }
-    #credits{
-        flex-direction: column;
-    }
-    #devtools, #imgiitr{
-        display: none;
-    }
-    #devtoolsphone{
-        padding: 2%;
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px;
-        padding-right: 0px;
-        justify-content: space-around;
-        background: #121212;
-        font-family: 'Segoe UI';
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 20px;
-        line-height: 30.8px;
-        letter-spacing: 0%;
-        color:#F7F7F7;
-        border: none;
-    }
-    #imgiitrphone{
-        padding: 2%;
-        display: flex;
-        justify-content: center;
-        background: #1A1A1A;
-        font-family: 'Segoe UI';
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 18px;
-        line-height: 30.8px;
-        letter-spacing: 0%;
-        color:#F7F7F7;
-        border: none;
-    }
-    #recent_ka_title{
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 4%;
-    }
-    #achi_ka_title{
-        margin-left:0%;
-        margin-right: 0%;
-    }
-    #copyright{
-        background: #292929;
-        border: none;
-    }
-    footer{
-        padding-left: 10%;
-    }
-    #main_footer{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .heading_columns{
-        padding-bottom: 2%;
-    }
-    .date-box{
-        border: 0.05px solid #000000;
-    }
-    .card{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-    .card-title{
-        padding-bottom: 10px;
-    }
-    .buttons{
-        margin-top: 0;
-        padding-top: 3%;
-    }
-    #webmile{
-        display: none;
-    }
-    #phonemile{
-        padding-top: 4%;
-        display: inline;
-        font-family: 'Segoe UI';
-        font-weight: 600;
-        font-style: Semibold;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0%;
-        text-transform: uppercase;
-    }
-    #milestitle{
-        padding-top: 4%;
-    }
-    .content-of-scoller{
-        margin: 0;
-        padding-left: 4%;
-        padding-right: 4%;
-    }
-    .card-pic{
-        width:100%;
-        overflow: hidden;
-    }
-    .card-pic img{
-        width:100%;
-        object-fit: cover;
-    }
-    .years{
-        display: none;
-    }
-    #years_phone{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 8%;
-        padding-right: 8%;
-        color: #232323CC;
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 2px;
-        line-height: 100%;
-        letter-spacing: 1.25%;
-    }
-    #years_phone div:hover{
-        background: #232323;
-        color:#FFFFFF;
-    }
-    .year{
-        border-radius: 4px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 14px;
-        padding-right: 14px;
-        margin-bottom: 5%;
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 100%;
-        letter-spacing: 1.25%;
-    }
-    .m-card{
-        justify-self: center;
-    }
+@keyframes slider {
+    0%   { transform: translateX(0%); }
+    25%  { transform: translateX(-100%); }
+    50%  { transform: translateX(-200%); }
+    75%  { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
 }

@@ -1,0 +1,211 @@
+@media (max-width:1435px) {
+    nav div{
+        font-size: 14.02px;
+    }
+    #hype{
+        top:250px;
+    }
+    #char_shabd{
+        position: absolute;
+        top:250px;
+        left:10%;
+        font-size: 60px;
+        line-height: 55px;
+    }
+    #vid{
+        z-index: 1;
+        position: relative;
+        width:100%;
+        height:410px;
+        overflow: hidden;
+    }
+    #vid video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #extra div{
+        min-width:200px;
+        min-height: 150px;
+    }
+    #extra div img{
+        width: 75px;
+    }
+    .num{
+        font-size: 35px;
+    }
+    .des{
+        font-size: 23px;
+    }
+    .card{
+        align-items: center;
+    }
+    .card-pic img{
+        width:450px;
+        height: auto;
+    }
+    .card-title{
+        padding-top: 0px;
+        font-family: 'Lato';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0%;
+    }
+    .card-desc{
+        font-family:'Segoe UI';
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+    .card-title, .card-desc{
+        padding: 6px;
+    }
+    .buttons{
+        margin-top: 6px;
+        padding: 5px;
+    }
+    .read, .license{
+        width: auto;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    #names{
+        font-size: 18px;
+    }
+    #achi_ka_title{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #achi_ka_scoller{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .a-card-caption{
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: auto;
+        padding: 5px;
+    }
+    .a-card-body{
+        font-size: 10px;
+        line-height: 16px;
+        padding: 5px;
+    }
+    .heading_columns{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    #main_footer{
+        column-gap: 10px;
+    }
+}
+@media (max-width:900px){
+    nav div{
+        font-size: 12px;
+    }
+    #char_shabd{
+        position: absolute;
+        top: 230px;
+        left:10%;
+    }
+    #vid{
+        z-index: 1;
+        position: relative;
+        width:100%;
+        height:330px;
+        overflow: hidden;
+    }
+    #vid video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #extra div{
+        min-width: 100px;
+        min-height: 150px;
+    }
+    #extra div img{
+        width: 50px;
+    }
+    #extra_ka_extra{
+        margin-top: -30px;
+    }
+    .num{
+        font-size: 25px;
+    }
+    .des{
+        font-size: 18px;
+    }
+    .card-pic img{
+        width:350px;
+        height: auto;
+    }
+    .card-title{
+        padding-top: 0px;
+        font-family: 'Lato';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+    .card-desc{
+        font-family:'Segoe UI';
+        font-weight: 400;
+        font-size: 0.5rem;
+        line-height: 12px;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+    .card-title, .card-desc{
+        padding: 6px;
+    }
+    .buttons{
+        margin-top: 4px;
+        padding: 5px;
+    }
+    .read, .license{
+        width: auto;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .a-card-caption{
+        padding: 15px;
+        font-family: 'Segoe UI';
+        font-weight: 600;
+        font-style: Semibold;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        text-align: justify;
+    }
+    .a-card-body{
+        padding:15px;
+        font-family: 'Segoe UI';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+    .a-img{
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .a-card{
+        flex: 0 0 100%;
+    }
+    .a-card-set{
+        overflow-x: auto;
+    }
+    .a-card-set::-webkit-scrollbar{
+        display: none;
+    }
+    #hype{
+        top:230px;
+    }
+}
