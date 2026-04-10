@@ -187,6 +187,8 @@
         flex-direction: column;
     }
     #names{
+        position: relative;
+        left:0;
         flex-direction: row;
         overflow-x: auto;
         order:1;
