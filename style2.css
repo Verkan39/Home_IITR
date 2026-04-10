@@ -187,8 +187,6 @@
         flex-direction: column;
     }
     #names{
-        position: relative;
-        left:0;
         flex-direction: row;
         overflow-x: auto;
         order:1;
@@ -359,7 +357,7 @@
         line-height: 100%;
         letter-spacing: 1.25%;
     }
-    #years_phone div:hover{
+    .year.active{
         background: #232323;
         color:#FFFFFF;
     }

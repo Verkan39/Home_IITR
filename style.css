@@ -672,7 +672,7 @@ i{
     align-items: center;
     margin-bottom: 3%;
 }
-.years div{
+.aise{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -690,6 +690,7 @@ i{
 }
 .m-card{
     grid-template-columns: auto 1fr;
+    flex: 0 0 100%;
 }
 .m-title{
     font-family: 'Segoe UI';
@@ -1074,4 +1075,21 @@ footer{
     50%  { transform: translateX(-200%); }
     75%  { transform: translateX(-300%); }
     100% { transform: translateX(0%); }
+}
+#hindi_ka_hindi{
+    padding-top: 5px;
+}
+.m-card-set1{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.m-card-set1::-webkit-scrollbar{
+    display: none;
+}
+.m-card ::-webkit-scrollbar{
+    display: none;
+}
+.aise.active{
+    color: #F9B202;
 }
